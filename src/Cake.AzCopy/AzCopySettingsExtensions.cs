@@ -1,3 +1,5 @@
+using Cake.Core.IO;
+
 namespace Cake.AzCopy
 {
     public static class AzCopySettingsExtensions
@@ -19,6 +21,7 @@ namespace Cake.AzCopy
 
         public static AzCopySettings UseDestinationSignature(this AzCopySettings settings, string sas) {
             settings.DestinationSAS = sas;
+            return settings;
         }
 
         public static AzCopySettings UseSourceSignature(this AzCopySettings settings, string sas) {
@@ -68,7 +71,7 @@ namespace Cake.AzCopy
             return settings;
         }
 
-        public static AzCopySettings SetConcurrentOperationCount(this AzCopySettings settings, int count) {
+        public static AzCopySettings SetConcurrentOperationsCount(this AzCopySettings settings, int count) {
             if (count <= 512) {
                 settings.ConcurrentOperations = count;
             }
