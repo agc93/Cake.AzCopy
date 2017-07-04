@@ -36,6 +36,9 @@ namespace Cake.AzCopy
             var args = _environment.Platform.Family == PlatformFamily.Windows 
                 ? settings.BuildForWindows(source, destination)
                 : settings.BuildForLinux(source, destination);
+            if (_log.Verbosity == Verbosity.Verbose || _log.Verbosity == Verbosity.Diagnostic && _environment.Platform.Family == PlatformFamily.Linux) {
+                args.Append("--verbose");
+            }
             Run(settings, args);
         } 
     }
