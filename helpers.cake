@@ -7,7 +7,7 @@ List<NuSpecContent> GetContent(IEnumerable<string> frameworks, ProjectCollection
             var match = GetFiles(project.Path.GetDirectory() + "/bin/" + configuration + "/" + framework + "/" + project.Name +".*");
             var libFiles = match
                 .Where(f => f.GetExtension() != ".pdb")
-                .Select(f => new NuSpecContent { Source = f.FullPath, Target = $"lib/{framework}"});
+                .Select(f => new NuSpecContent { Source = f.FullPath, Target = $"lib\\{framework}"});
             content.AddRange(libFiles);
         }
     }
