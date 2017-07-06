@@ -1,0 +1,588 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Cake.AzCopy
+  name: Cake.AzCopy
+  href: api/Cake.AzCopy.html
+  commentId: N:Cake.AzCopy
+  fullName: Cake.AzCopy
+  nameWithType: Cake.AzCopy
+- uid: Cake.AzCopy.AzCopyAliases
+  name: AzCopyAliases
+  href: api/Cake.AzCopy.AzCopyAliases.html
+  commentId: T:Cake.AzCopy.AzCopyAliases
+  fullName: Cake.AzCopy.AzCopyAliases
+  nameWithType: AzCopyAliases
+- uid: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext,System.String,System.String)
+  name: AzCopy(ICakeContext, String, String)
+  href: api/Cake.AzCopy.AzCopyAliases.html#Cake_AzCopy_AzCopyAliases_AzCopy_Cake_Core_ICakeContext_System_String_System_String_
+  commentId: M:Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext,System.String,System.String)
+  fullName: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext, System.String, System.String)
+  nameWithType: AzCopyAliases.AzCopy(ICakeContext, String, String)
+- uid: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext,System.String,System.String,Cake.AzCopy.AzCopySettings)
+  name: AzCopy(ICakeContext, String, String, AzCopySettings)
+  href: api/Cake.AzCopy.AzCopyAliases.html#Cake_AzCopy_AzCopyAliases_AzCopy_Cake_Core_ICakeContext_System_String_System_String_Cake_AzCopy_AzCopySettings_
+  commentId: M:Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext,System.String,System.String,Cake.AzCopy.AzCopySettings)
+  fullName: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext, System.String, System.String, Cake.AzCopy.AzCopySettings)
+  nameWithType: AzCopyAliases.AzCopy(ICakeContext, String, String, AzCopySettings)
+- uid: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext,System.String,System.String,System.Action{Cake.AzCopy.AzCopySettings})
+  name: AzCopy(ICakeContext, String, String, Action<AzCopySettings>)
+  href: api/Cake.AzCopy.AzCopyAliases.html#Cake_AzCopy_AzCopyAliases_AzCopy_Cake_Core_ICakeContext_System_String_System_String_System_Action_Cake_AzCopy_AzCopySettings__
+  commentId: M:Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext,System.String,System.String,System.Action{Cake.AzCopy.AzCopySettings})
+  name.vb: AzCopy(ICakeContext, String, String, Action(Of AzCopySettings))
+  fullName: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext, System.String, System.String, System.Action<Cake.AzCopy.AzCopySettings>)
+  fullName.vb: Cake.AzCopy.AzCopyAliases.AzCopy(Cake.Core.ICakeContext, System.String, System.String, System.Action(Of Cake.AzCopy.AzCopySettings))
+  nameWithType: AzCopyAliases.AzCopy(ICakeContext, String, String, Action<AzCopySettings>)
+  nameWithType.vb: AzCopyAliases.AzCopy(ICakeContext, String, String, Action(Of AzCopySettings))
+- uid: Cake.AzCopy.AzCopyAliases.AzCopy*
+  name: AzCopy
+  href: api/Cake.AzCopy.AzCopyAliases.html#Cake_AzCopy_AzCopyAliases_AzCopy_
+  commentId: Overload:Cake.AzCopy.AzCopyAliases.AzCopy
+  fullName: Cake.AzCopy.AzCopyAliases.AzCopy
+  nameWithType: AzCopyAliases.AzCopy
+- uid: Cake.AzCopy.AzCopyRunner
+  name: AzCopyRunner
+  href: api/Cake.AzCopy.AzCopyRunner.html
+  commentId: T:Cake.AzCopy.AzCopyRunner
+  fullName: Cake.AzCopy.AzCopyRunner
+  nameWithType: AzCopyRunner
+- uid: Cake.AzCopy.AzCopyRunner.#ctor(Cake.Core.ICakeContext)
+  name: AzCopyRunner(ICakeContext)
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner__ctor_Cake_Core_ICakeContext_
+  commentId: M:Cake.AzCopy.AzCopyRunner.#ctor(Cake.Core.ICakeContext)
+  fullName: Cake.AzCopy.AzCopyRunner.AzCopyRunner(Cake.Core.ICakeContext)
+  nameWithType: AzCopyRunner.AzCopyRunner(ICakeContext)
+- uid: Cake.AzCopy.AzCopyRunner.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator,Cake.Core.Diagnostics.ICakeLog)
+  name: AzCopyRunner(IFileSystem, ICakeEnvironment, IProcessRunner, IToolLocator, ICakeLog)
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner__ctor_Cake_Core_IO_IFileSystem_Cake_Core_ICakeEnvironment_Cake_Core_IO_IProcessRunner_Cake_Core_Tooling_IToolLocator_Cake_Core_Diagnostics_ICakeLog_
+  commentId: M:Cake.AzCopy.AzCopyRunner.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator,Cake.Core.Diagnostics.ICakeLog)
+  fullName: Cake.AzCopy.AzCopyRunner.AzCopyRunner(Cake.Core.IO.IFileSystem, Cake.Core.ICakeEnvironment, Cake.Core.IO.IProcessRunner, Cake.Core.Tooling.IToolLocator, Cake.Core.Diagnostics.ICakeLog)
+  nameWithType: AzCopyRunner.AzCopyRunner(IFileSystem, ICakeEnvironment, IProcessRunner, IToolLocator, ICakeLog)
+- uid: Cake.AzCopy.AzCopyRunner.#ctor*
+  name: AzCopyRunner
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner__ctor_
+  commentId: Overload:Cake.AzCopy.AzCopyRunner.#ctor
+  fullName: Cake.AzCopy.AzCopyRunner.AzCopyRunner
+  nameWithType: AzCopyRunner.AzCopyRunner
+- uid: Cake.AzCopy.AzCopyRunner.GetToolExecutableNames
+  name: GetToolExecutableNames()
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner_GetToolExecutableNames
+  commentId: M:Cake.AzCopy.AzCopyRunner.GetToolExecutableNames
+  fullName: Cake.AzCopy.AzCopyRunner.GetToolExecutableNames()
+  nameWithType: AzCopyRunner.GetToolExecutableNames()
+- uid: Cake.AzCopy.AzCopyRunner.GetToolExecutableNames*
+  name: GetToolExecutableNames
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner_GetToolExecutableNames_
+  commentId: Overload:Cake.AzCopy.AzCopyRunner.GetToolExecutableNames
+  fullName: Cake.AzCopy.AzCopyRunner.GetToolExecutableNames
+  nameWithType: AzCopyRunner.GetToolExecutableNames
+- uid: Cake.AzCopy.AzCopyRunner.GetToolName
+  name: GetToolName()
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner_GetToolName
+  commentId: M:Cake.AzCopy.AzCopyRunner.GetToolName
+  fullName: Cake.AzCopy.AzCopyRunner.GetToolName()
+  nameWithType: AzCopyRunner.GetToolName()
+- uid: Cake.AzCopy.AzCopyRunner.GetToolName*
+  name: GetToolName
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner_GetToolName_
+  commentId: Overload:Cake.AzCopy.AzCopyRunner.GetToolName
+  fullName: Cake.AzCopy.AzCopyRunner.GetToolName
+  nameWithType: AzCopyRunner.GetToolName
+- uid: Cake.AzCopy.AzCopyRunner.RunTool(System.String,System.String,Cake.AzCopy.AzCopySettings)
+  name: RunTool(String, String, AzCopySettings)
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner_RunTool_System_String_System_String_Cake_AzCopy_AzCopySettings_
+  commentId: M:Cake.AzCopy.AzCopyRunner.RunTool(System.String,System.String,Cake.AzCopy.AzCopySettings)
+  fullName: Cake.AzCopy.AzCopyRunner.RunTool(System.String, System.String, Cake.AzCopy.AzCopySettings)
+  nameWithType: AzCopyRunner.RunTool(String, String, AzCopySettings)
+- uid: Cake.AzCopy.AzCopyRunner.RunTool*
+  name: RunTool
+  href: api/Cake.AzCopy.AzCopyRunner.html#Cake_AzCopy_AzCopyRunner_RunTool_
+  commentId: Overload:Cake.AzCopy.AzCopyRunner.RunTool
+  fullName: Cake.AzCopy.AzCopyRunner.RunTool
+  nameWithType: AzCopyRunner.RunTool
+- uid: Cake.AzCopy.AzCopySettings
+  name: AzCopySettings
+  href: api/Cake.AzCopy.AzCopySettings.html
+  commentId: T:Cake.AzCopy.AzCopySettings
+  fullName: Cake.AzCopy.AzCopySettings
+  nameWithType: AzCopySettings
+- uid: Cake.AzCopy.AzCopySettings.BlobType
+  name: BlobType
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_BlobType
+  commentId: P:Cake.AzCopy.AzCopySettings.BlobType
+  fullName: Cake.AzCopy.AzCopySettings.BlobType
+  nameWithType: AzCopySettings.BlobType
+- uid: Cake.AzCopy.AzCopySettings.BlobType*
+  name: BlobType
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_BlobType_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.BlobType
+  fullName: Cake.AzCopy.AzCopySettings.BlobType
+  nameWithType: AzCopySettings.BlobType
+- uid: Cake.AzCopy.AzCopySettings.BuildLinuxArguments(Cake.Core.IO.ProcessArgumentBuilder)
+  name: BuildLinuxArguments(ProcessArgumentBuilder)
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_BuildLinuxArguments_Cake_Core_IO_ProcessArgumentBuilder_
+  commentId: M:Cake.AzCopy.AzCopySettings.BuildLinuxArguments(Cake.Core.IO.ProcessArgumentBuilder)
+  fullName: Cake.AzCopy.AzCopySettings.BuildLinuxArguments(Cake.Core.IO.ProcessArgumentBuilder)
+  nameWithType: AzCopySettings.BuildLinuxArguments(ProcessArgumentBuilder)
+- uid: Cake.AzCopy.AzCopySettings.BuildLinuxArguments*
+  name: BuildLinuxArguments
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_BuildLinuxArguments_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.BuildLinuxArguments
+  fullName: Cake.AzCopy.AzCopySettings.BuildLinuxArguments
+  nameWithType: AzCopySettings.BuildLinuxArguments
+- uid: Cake.AzCopy.AzCopySettings.BuildWindowsArguments(Cake.Core.IO.ProcessArgumentBuilder)
+  name: BuildWindowsArguments(ProcessArgumentBuilder)
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_BuildWindowsArguments_Cake_Core_IO_ProcessArgumentBuilder_
+  commentId: M:Cake.AzCopy.AzCopySettings.BuildWindowsArguments(Cake.Core.IO.ProcessArgumentBuilder)
+  fullName: Cake.AzCopy.AzCopySettings.BuildWindowsArguments(Cake.Core.IO.ProcessArgumentBuilder)
+  nameWithType: AzCopySettings.BuildWindowsArguments(ProcessArgumentBuilder)
+- uid: Cake.AzCopy.AzCopySettings.BuildWindowsArguments*
+  name: BuildWindowsArguments
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_BuildWindowsArguments_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.BuildWindowsArguments
+  fullName: Cake.AzCopy.AzCopySettings.BuildWindowsArguments
+  nameWithType: AzCopySettings.BuildWindowsArguments
+- uid: Cake.AzCopy.AzCopySettings.ConcurrentOperations
+  name: ConcurrentOperations
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_ConcurrentOperations
+  commentId: P:Cake.AzCopy.AzCopySettings.ConcurrentOperations
+  fullName: Cake.AzCopy.AzCopySettings.ConcurrentOperations
+  nameWithType: AzCopySettings.ConcurrentOperations
+- uid: Cake.AzCopy.AzCopySettings.ConcurrentOperations*
+  name: ConcurrentOperations
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_ConcurrentOperations_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.ConcurrentOperations
+  fullName: Cake.AzCopy.AzCopySettings.ConcurrentOperations
+  nameWithType: AzCopySettings.ConcurrentOperations
+- uid: Cake.AzCopy.AzCopySettings.Delimiter
+  name: Delimiter
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_Delimiter
+  commentId: P:Cake.AzCopy.AzCopySettings.Delimiter
+  fullName: Cake.AzCopy.AzCopySettings.Delimiter
+  nameWithType: AzCopySettings.Delimiter
+- uid: Cake.AzCopy.AzCopySettings.Delimiter*
+  name: Delimiter
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_Delimiter_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.Delimiter
+  fullName: Cake.AzCopy.AzCopySettings.Delimiter
+  nameWithType: AzCopySettings.Delimiter
+- uid: Cake.AzCopy.AzCopySettings.DestinationKey
+  name: DestinationKey
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_DestinationKey
+  commentId: P:Cake.AzCopy.AzCopySettings.DestinationKey
+  fullName: Cake.AzCopy.AzCopySettings.DestinationKey
+  nameWithType: AzCopySettings.DestinationKey
+- uid: Cake.AzCopy.AzCopySettings.DestinationKey*
+  name: DestinationKey
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_DestinationKey_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.DestinationKey
+  fullName: Cake.AzCopy.AzCopySettings.DestinationKey
+  nameWithType: AzCopySettings.DestinationKey
+- uid: Cake.AzCopy.AzCopySettings.DestinationSAS
+  name: DestinationSAS
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_DestinationSAS
+  commentId: P:Cake.AzCopy.AzCopySettings.DestinationSAS
+  fullName: Cake.AzCopy.AzCopySettings.DestinationSAS
+  nameWithType: AzCopySettings.DestinationSAS
+- uid: Cake.AzCopy.AzCopySettings.DestinationSAS*
+  name: DestinationSAS
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_DestinationSAS_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.DestinationSAS
+  fullName: Cake.AzCopy.AzCopySettings.DestinationSAS
+  nameWithType: AzCopySettings.DestinationSAS
+- uid: Cake.AzCopy.AzCopySettings.FileHandlingBehaviour
+  name: FileHandlingBehaviour
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_FileHandlingBehaviour
+  commentId: P:Cake.AzCopy.AzCopySettings.FileHandlingBehaviour
+  fullName: Cake.AzCopy.AzCopySettings.FileHandlingBehaviour
+  nameWithType: AzCopySettings.FileHandlingBehaviour
+- uid: Cake.AzCopy.AzCopySettings.FileHandlingBehaviour*
+  name: FileHandlingBehaviour
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_FileHandlingBehaviour_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.FileHandlingBehaviour
+  fullName: Cake.AzCopy.AzCopySettings.FileHandlingBehaviour
+  nameWithType: AzCopySettings.FileHandlingBehaviour
+- uid: Cake.AzCopy.AzCopySettings.LogFile
+  name: LogFile
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_LogFile
+  commentId: P:Cake.AzCopy.AzCopySettings.LogFile
+  fullName: Cake.AzCopy.AzCopySettings.LogFile
+  nameWithType: AzCopySettings.LogFile
+- uid: Cake.AzCopy.AzCopySettings.LogFile*
+  name: LogFile
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_LogFile_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.LogFile
+  fullName: Cake.AzCopy.AzCopySettings.LogFile
+  nameWithType: AzCopySettings.LogFile
+- uid: Cake.AzCopy.AzCopySettings.ParameterFiles
+  name: ParameterFiles
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_ParameterFiles
+  commentId: P:Cake.AzCopy.AzCopySettings.ParameterFiles
+  fullName: Cake.AzCopy.AzCopySettings.ParameterFiles
+  nameWithType: AzCopySettings.ParameterFiles
+- uid: Cake.AzCopy.AzCopySettings.ParameterFiles*
+  name: ParameterFiles
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_ParameterFiles_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.ParameterFiles
+  fullName: Cake.AzCopy.AzCopySettings.ParameterFiles
+  nameWithType: AzCopySettings.ParameterFiles
+- uid: Cake.AzCopy.AzCopySettings.Pattern
+  name: Pattern
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_Pattern
+  commentId: P:Cake.AzCopy.AzCopySettings.Pattern
+  fullName: Cake.AzCopy.AzCopySettings.Pattern
+  nameWithType: AzCopySettings.Pattern
+- uid: Cake.AzCopy.AzCopySettings.Pattern*
+  name: Pattern
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_Pattern_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.Pattern
+  fullName: Cake.AzCopy.AzCopySettings.Pattern
+  nameWithType: AzCopySettings.Pattern
+- uid: Cake.AzCopy.AzCopySettings.PayloadFormat
+  name: PayloadFormat
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_PayloadFormat
+  commentId: P:Cake.AzCopy.AzCopySettings.PayloadFormat
+  fullName: Cake.AzCopy.AzCopySettings.PayloadFormat
+  nameWithType: AzCopySettings.PayloadFormat
+- uid: Cake.AzCopy.AzCopySettings.PayloadFormat*
+  name: PayloadFormat
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_PayloadFormat_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.PayloadFormat
+  fullName: Cake.AzCopy.AzCopySettings.PayloadFormat
+  nameWithType: AzCopySettings.PayloadFormat
+- uid: Cake.AzCopy.AzCopySettings.Recursive
+  name: Recursive
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_Recursive
+  commentId: P:Cake.AzCopy.AzCopySettings.Recursive
+  fullName: Cake.AzCopy.AzCopySettings.Recursive
+  nameWithType: AzCopySettings.Recursive
+- uid: Cake.AzCopy.AzCopySettings.Recursive*
+  name: Recursive
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_Recursive_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.Recursive
+  fullName: Cake.AzCopy.AzCopySettings.Recursive
+  nameWithType: AzCopySettings.Recursive
+- uid: Cake.AzCopy.AzCopySettings.SourceKey
+  name: SourceKey
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_SourceKey
+  commentId: P:Cake.AzCopy.AzCopySettings.SourceKey
+  fullName: Cake.AzCopy.AzCopySettings.SourceKey
+  nameWithType: AzCopySettings.SourceKey
+- uid: Cake.AzCopy.AzCopySettings.SourceKey*
+  name: SourceKey
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_SourceKey_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.SourceKey
+  fullName: Cake.AzCopy.AzCopySettings.SourceKey
+  nameWithType: AzCopySettings.SourceKey
+- uid: Cake.AzCopy.AzCopySettings.SourceSAS
+  name: SourceSAS
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_SourceSAS
+  commentId: P:Cake.AzCopy.AzCopySettings.SourceSAS
+  fullName: Cake.AzCopy.AzCopySettings.SourceSAS
+  nameWithType: AzCopySettings.SourceSAS
+- uid: Cake.AzCopy.AzCopySettings.SourceSAS*
+  name: SourceSAS
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_SourceSAS_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.SourceSAS
+  fullName: Cake.AzCopy.AzCopySettings.SourceSAS
+  nameWithType: AzCopySettings.SourceSAS
+- uid: Cake.AzCopy.AzCopySettings.TargetContentType
+  name: TargetContentType
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_TargetContentType
+  commentId: P:Cake.AzCopy.AzCopySettings.TargetContentType
+  fullName: Cake.AzCopy.AzCopySettings.TargetContentType
+  nameWithType: AzCopySettings.TargetContentType
+- uid: Cake.AzCopy.AzCopySettings.TargetContentType*
+  name: TargetContentType
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_TargetContentType_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.TargetContentType
+  fullName: Cake.AzCopy.AzCopySettings.TargetContentType
+  nameWithType: AzCopySettings.TargetContentType
+- uid: Cake.AzCopy.AzCopySettings.UseChecksum
+  name: UseChecksum
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_UseChecksum
+  commentId: P:Cake.AzCopy.AzCopySettings.UseChecksum
+  fullName: Cake.AzCopy.AzCopySettings.UseChecksum
+  nameWithType: AzCopySettings.UseChecksum
+- uid: Cake.AzCopy.AzCopySettings.UseChecksum*
+  name: UseChecksum
+  href: api/Cake.AzCopy.AzCopySettings.html#Cake_AzCopy_AzCopySettings_UseChecksum_
+  commentId: Overload:Cake.AzCopy.AzCopySettings.UseChecksum
+  fullName: Cake.AzCopy.AzCopySettings.UseChecksum
+  nameWithType: AzCopySettings.UseChecksum
+- uid: Cake.AzCopy.AzCopySettingsExtensions
+  name: AzCopySettingsExtensions
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html
+  commentId: T:Cake.AzCopy.AzCopySettingsExtensions
+  fullName: Cake.AzCopy.AzCopySettingsExtensions
+  nameWithType: AzCopySettingsExtensions
+- uid: Cake.AzCopy.AzCopySettingsExtensions.AddResponseFile(Cake.AzCopy.AzCopySettings,Cake.Core.IO.FilePath)
+  name: AddResponseFile(AzCopySettings, FilePath)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_AddResponseFile_Cake_AzCopy_AzCopySettings_Cake_Core_IO_FilePath_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.AddResponseFile(Cake.AzCopy.AzCopySettings,Cake.Core.IO.FilePath)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.AddResponseFile(Cake.AzCopy.AzCopySettings, Cake.Core.IO.FilePath)
+  nameWithType: AzCopySettingsExtensions.AddResponseFile(AzCopySettings, FilePath)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.AddResponseFile*
+  name: AddResponseFile
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_AddResponseFile_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.AddResponseFile
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.AddResponseFile
+  nameWithType: AzCopySettingsExtensions.AddResponseFile
+- uid: Cake.AzCopy.AzCopySettingsExtensions.CopyRecursively(Cake.AzCopy.AzCopySettings,System.Boolean)
+  name: CopyRecursively(AzCopySettings, Boolean)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_CopyRecursively_Cake_AzCopy_AzCopySettings_System_Boolean_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.CopyRecursively(Cake.AzCopy.AzCopySettings,System.Boolean)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.CopyRecursively(Cake.AzCopy.AzCopySettings, System.Boolean)
+  nameWithType: AzCopySettingsExtensions.CopyRecursively(AzCopySettings, Boolean)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.CopyRecursively*
+  name: CopyRecursively
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_CopyRecursively_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.CopyRecursively
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.CopyRecursively
+  nameWithType: AzCopySettingsExtensions.CopyRecursively
+- uid: Cake.AzCopy.AzCopySettingsExtensions.EnableChecksums(Cake.AzCopy.AzCopySettings,System.Boolean)
+  name: EnableChecksums(AzCopySettings, Boolean)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_EnableChecksums_Cake_AzCopy_AzCopySettings_System_Boolean_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.EnableChecksums(Cake.AzCopy.AzCopySettings,System.Boolean)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.EnableChecksums(Cake.AzCopy.AzCopySettings, System.Boolean)
+  nameWithType: AzCopySettingsExtensions.EnableChecksums(AzCopySettings, Boolean)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.EnableChecksums*
+  name: EnableChecksums
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_EnableChecksums_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.EnableChecksums
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.EnableChecksums
+  nameWithType: AzCopySettingsExtensions.EnableChecksums
+- uid: Cake.AzCopy.AzCopySettingsExtensions.LogToFile(Cake.AzCopy.AzCopySettings,Cake.Core.IO.FilePath)
+  name: LogToFile(AzCopySettings, FilePath)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_LogToFile_Cake_AzCopy_AzCopySettings_Cake_Core_IO_FilePath_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.LogToFile(Cake.AzCopy.AzCopySettings,Cake.Core.IO.FilePath)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.LogToFile(Cake.AzCopy.AzCopySettings, Cake.Core.IO.FilePath)
+  nameWithType: AzCopySettingsExtensions.LogToFile(AzCopySettings, FilePath)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.LogToFile*
+  name: LogToFile
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_LogToFile_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.LogToFile
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.LogToFile
+  nameWithType: AzCopySettingsExtensions.LogToFile
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetBlobType(Cake.AzCopy.AzCopySettings,Cake.AzCopy.BlobType)
+  name: SetBlobType(AzCopySettings, BlobType)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetBlobType_Cake_AzCopy_AzCopySettings_Cake_AzCopy_BlobType_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetBlobType(Cake.AzCopy.AzCopySettings,Cake.AzCopy.BlobType)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetBlobType(Cake.AzCopy.AzCopySettings, Cake.AzCopy.BlobType)
+  nameWithType: AzCopySettingsExtensions.SetBlobType(AzCopySettings, BlobType)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetBlobType(Cake.AzCopy.AzCopySettings,System.String)
+  name: SetBlobType(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetBlobType_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetBlobType(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetBlobType(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.SetBlobType(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetBlobType*
+  name: SetBlobType
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetBlobType_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.SetBlobType
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetBlobType
+  nameWithType: AzCopySettingsExtensions.SetBlobType
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetConcurrentOperationsCount(Cake.AzCopy.AzCopySettings,System.Int32)
+  name: SetConcurrentOperationsCount(AzCopySettings, Int32)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetConcurrentOperationsCount_Cake_AzCopy_AzCopySettings_System_Int32_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetConcurrentOperationsCount(Cake.AzCopy.AzCopySettings,System.Int32)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetConcurrentOperationsCount(Cake.AzCopy.AzCopySettings, System.Int32)
+  nameWithType: AzCopySettingsExtensions.SetConcurrentOperationsCount(AzCopySettings, Int32)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetConcurrentOperationsCount*
+  name: SetConcurrentOperationsCount
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetConcurrentOperationsCount_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.SetConcurrentOperationsCount
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetConcurrentOperationsCount
+  nameWithType: AzCopySettingsExtensions.SetConcurrentOperationsCount
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetContentType(Cake.AzCopy.AzCopySettings,System.String)
+  name: SetContentType(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetContentType_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetContentType(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetContentType(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.SetContentType(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetContentType*
+  name: SetContentType
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetContentType_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.SetContentType
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetContentType
+  nameWithType: AzCopySettingsExtensions.SetContentType
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetFileBehaviour(Cake.AzCopy.AzCopySettings,Cake.AzCopy.FileHandling)
+  name: SetFileBehaviour(AzCopySettings, FileHandling)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetFileBehaviour_Cake_AzCopy_AzCopySettings_Cake_AzCopy_FileHandling_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetFileBehaviour(Cake.AzCopy.AzCopySettings,Cake.AzCopy.FileHandling)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetFileBehaviour(Cake.AzCopy.AzCopySettings, Cake.AzCopy.FileHandling)
+  nameWithType: AzCopySettingsExtensions.SetFileBehaviour(AzCopySettings, FileHandling)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetFileBehaviour*
+  name: SetFileBehaviour
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetFileBehaviour_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.SetFileBehaviour
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetFileBehaviour
+  nameWithType: AzCopySettingsExtensions.SetFileBehaviour
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat(Cake.AzCopy.AzCopySettings,Cake.AzCopy.PayloadFormat)
+  name: SetPayloadFormat(AzCopySettings, PayloadFormat)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetPayloadFormat_Cake_AzCopy_AzCopySettings_Cake_AzCopy_PayloadFormat_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat(Cake.AzCopy.AzCopySettings,Cake.AzCopy.PayloadFormat)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat(Cake.AzCopy.AzCopySettings, Cake.AzCopy.PayloadFormat)
+  nameWithType: AzCopySettingsExtensions.SetPayloadFormat(AzCopySettings, PayloadFormat)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat(Cake.AzCopy.AzCopySettings,System.String)
+  name: SetPayloadFormat(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetPayloadFormat_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.SetPayloadFormat(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat*
+  name: SetPayloadFormat
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetPayloadFormat_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.SetPayloadFormat
+  nameWithType: AzCopySettingsExtensions.SetPayloadFormat
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseDelimiter(Cake.AzCopy.AzCopySettings,System.Char)
+  name: UseDelimiter(AzCopySettings, Char)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDelimiter_Cake_AzCopy_AzCopySettings_System_Char_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.UseDelimiter(Cake.AzCopy.AzCopySettings,System.Char)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseDelimiter(Cake.AzCopy.AzCopySettings, System.Char)
+  nameWithType: AzCopySettingsExtensions.UseDelimiter(AzCopySettings, Char)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseDelimiter*
+  name: UseDelimiter
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDelimiter_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.UseDelimiter
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseDelimiter
+  nameWithType: AzCopySettingsExtensions.UseDelimiter
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationAccountKey(Cake.AzCopy.AzCopySettings,System.String)
+  name: UseDestinationAccountKey(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDestinationAccountKey_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.UseDestinationAccountKey(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationAccountKey(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.UseDestinationAccountKey(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationAccountKey*
+  name: UseDestinationAccountKey
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDestinationAccountKey_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.UseDestinationAccountKey
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationAccountKey
+  nameWithType: AzCopySettingsExtensions.UseDestinationAccountKey
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationSignature(Cake.AzCopy.AzCopySettings,System.String)
+  name: UseDestinationSignature(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDestinationSignature_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.UseDestinationSignature(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationSignature(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.UseDestinationSignature(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationSignature*
+  name: UseDestinationSignature
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDestinationSignature_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.UseDestinationSignature
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseDestinationSignature
+  nameWithType: AzCopySettingsExtensions.UseDestinationSignature
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UsePattern(Cake.AzCopy.AzCopySettings,System.String)
+  name: UsePattern(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UsePattern_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.UsePattern(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UsePattern(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.UsePattern(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UsePattern*
+  name: UsePattern
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UsePattern_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.UsePattern
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UsePattern
+  nameWithType: AzCopySettingsExtensions.UsePattern
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseSourceAccountKey(Cake.AzCopy.AzCopySettings,System.String)
+  name: UseSourceAccountKey(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseSourceAccountKey_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.UseSourceAccountKey(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseSourceAccountKey(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.UseSourceAccountKey(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseSourceAccountKey*
+  name: UseSourceAccountKey
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseSourceAccountKey_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.UseSourceAccountKey
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseSourceAccountKey
+  nameWithType: AzCopySettingsExtensions.UseSourceAccountKey
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseSourceSignature(Cake.AzCopy.AzCopySettings,System.String)
+  name: UseSourceSignature(AzCopySettings, String)
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseSourceSignature_Cake_AzCopy_AzCopySettings_System_String_
+  commentId: M:Cake.AzCopy.AzCopySettingsExtensions.UseSourceSignature(Cake.AzCopy.AzCopySettings,System.String)
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseSourceSignature(Cake.AzCopy.AzCopySettings, System.String)
+  nameWithType: AzCopySettingsExtensions.UseSourceSignature(AzCopySettings, String)
+- uid: Cake.AzCopy.AzCopySettingsExtensions.UseSourceSignature*
+  name: UseSourceSignature
+  href: api/Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseSourceSignature_
+  commentId: Overload:Cake.AzCopy.AzCopySettingsExtensions.UseSourceSignature
+  fullName: Cake.AzCopy.AzCopySettingsExtensions.UseSourceSignature
+  nameWithType: AzCopySettingsExtensions.UseSourceSignature
+- uid: Cake.AzCopy.BlobType
+  name: BlobType
+  href: api/Cake.AzCopy.BlobType.html
+  commentId: T:Cake.AzCopy.BlobType
+  fullName: Cake.AzCopy.BlobType
+  nameWithType: BlobType
+- uid: Cake.AzCopy.BlobType.Append
+  name: Append
+  href: api/Cake.AzCopy.BlobType.html#Cake_AzCopy_BlobType_Append
+  commentId: F:Cake.AzCopy.BlobType.Append
+  fullName: Cake.AzCopy.BlobType.Append
+  nameWithType: BlobType.Append
+- uid: Cake.AzCopy.BlobType.Block
+  name: Block
+  href: api/Cake.AzCopy.BlobType.html#Cake_AzCopy_BlobType_Block
+  commentId: F:Cake.AzCopy.BlobType.Block
+  fullName: Cake.AzCopy.BlobType.Block
+  nameWithType: BlobType.Block
+- uid: Cake.AzCopy.BlobType.Page
+  name: Page
+  href: api/Cake.AzCopy.BlobType.html#Cake_AzCopy_BlobType_Page
+  commentId: F:Cake.AzCopy.BlobType.Page
+  fullName: Cake.AzCopy.BlobType.Page
+  nameWithType: BlobType.Page
+- uid: Cake.AzCopy.FileHandling
+  name: FileHandling
+  href: api/Cake.AzCopy.FileHandling.html
+  commentId: T:Cake.AzCopy.FileHandling
+  fullName: Cake.AzCopy.FileHandling
+  nameWithType: FileHandling
+- uid: Cake.AzCopy.FileHandling.ArchiveOnly
+  name: ArchiveOnly
+  href: api/Cake.AzCopy.FileHandling.html#Cake_AzCopy_FileHandling_ArchiveOnly
+  commentId: F:Cake.AzCopy.FileHandling.ArchiveOnly
+  fullName: Cake.AzCopy.FileHandling.ArchiveOnly
+  nameWithType: FileHandling.ArchiveOnly
+- uid: Cake.AzCopy.FileHandling.ExcludeNewerSource
+  name: ExcludeNewerSource
+  href: api/Cake.AzCopy.FileHandling.html#Cake_AzCopy_FileHandling_ExcludeNewerSource
+  commentId: F:Cake.AzCopy.FileHandling.ExcludeNewerSource
+  fullName: Cake.AzCopy.FileHandling.ExcludeNewerSource
+  nameWithType: FileHandling.ExcludeNewerSource
+- uid: Cake.AzCopy.FileHandling.ExcludeOlderSource
+  name: ExcludeOlderSource
+  href: api/Cake.AzCopy.FileHandling.html#Cake_AzCopy_FileHandling_ExcludeOlderSource
+  commentId: F:Cake.AzCopy.FileHandling.ExcludeOlderSource
+  fullName: Cake.AzCopy.FileHandling.ExcludeOlderSource
+  nameWithType: FileHandling.ExcludeOlderSource
+- uid: Cake.AzCopy.FileHandling.UpdateLastModified
+  name: UpdateLastModified
+  href: api/Cake.AzCopy.FileHandling.html#Cake_AzCopy_FileHandling_UpdateLastModified
+  commentId: F:Cake.AzCopy.FileHandling.UpdateLastModified
+  fullName: Cake.AzCopy.FileHandling.UpdateLastModified
+  nameWithType: FileHandling.UpdateLastModified
+- uid: Cake.AzCopy.PayloadFormat
+  name: PayloadFormat
+  href: api/Cake.AzCopy.PayloadFormat.html
+  commentId: T:Cake.AzCopy.PayloadFormat
+  fullName: Cake.AzCopy.PayloadFormat
+  nameWithType: PayloadFormat
+- uid: Cake.AzCopy.PayloadFormat.CSV
+  name: CSV
+  href: api/Cake.AzCopy.PayloadFormat.html#Cake_AzCopy_PayloadFormat_CSV
+  commentId: F:Cake.AzCopy.PayloadFormat.CSV
+  fullName: Cake.AzCopy.PayloadFormat.CSV
+  nameWithType: PayloadFormat.CSV
+- uid: Cake.AzCopy.PayloadFormat.Default
+  name: Default
+  href: api/Cake.AzCopy.PayloadFormat.html#Cake_AzCopy_PayloadFormat_Default
+  commentId: F:Cake.AzCopy.PayloadFormat.Default
+  fullName: Cake.AzCopy.PayloadFormat.Default
+  nameWithType: PayloadFormat.Default
+- uid: Cake.AzCopy.PayloadFormat.JSON
+  name: JSON
+  href: api/Cake.AzCopy.PayloadFormat.html#Cake_AzCopy_PayloadFormat_JSON
+  commentId: F:Cake.AzCopy.PayloadFormat.JSON
+  fullName: Cake.AzCopy.PayloadFormat.JSON
+  nameWithType: PayloadFormat.JSON

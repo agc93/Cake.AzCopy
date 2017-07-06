@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started | Cake.AzCopy </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started | Cake.AzCopy ">
+    <meta name="generator" content="docfx 2.19.2.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../assets/appIcon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../doc/intro.html" title="Documentation" class="active">Documentation</a>
+                  </li>
+                  <li class="">
+                    <a href="../api/index.html" title="Reference" class="">Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="active">
+                      <a href="intro.html" title="Introduction" class="active">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="settings.html" title="Settings" class="">Settings</a>
+                    </li>
+                    <li class="">
+                      <a href="contributing.html" title="Contributing" class="">Contributing</a>
+                    </li>
+                    <li class="">
+                      <a href="packages.html" title="NuGet Package" class="">NuGet Package</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="install-azcopy">Install AzCopy</h2>
+<p>First, you&#39;ll need to make sure you have AzCopy installed. You can find the full documentation of how to install AzCopy for Windows <a href="https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy#download-and-install-azcopy">here</a> and AzCopy for Linux <a href="https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy-linux#download-and-install-azcopy">here</a>.</p>
+<p>Since this addin relies on the underlying AzCopy CLI to perform copy operations, it runs on either Linux or Windows</p>
+<div class="WARNING"><h5>Warning</h5><p>Since AzCopy is not supported on macOS, this addin is also not supported for macOS.</p>
+<p>[!INFO]
+For this addin to work, you need to make sure one of <code>AzCopy.exe</code> or <code>azcopy</code> is available in the PATH or the <code>tools/</code> folder.</p>
+</div>
+<h2 id="including-the-addin">Including the addin</h2>
+<p>At the top of your script, just add the following to install the addin:</p>
+<pre><code>#addin nuget:?package=Cake.AzCopy
+</code></pre><h2 id="usage">Usage</h2>
+<p>The addin exposes a single (overloaded) method alias <code>AzCopy</code> to use when for copy operations.</p>
+<p>To use the defaults, just run the <code>AzCopy(string, string)</code> alias:</p>
+<pre><code class="lang-csharp">AzCopy(&quot;https://myaccount.blob.core.windows.net/mycontainer/&quot;, &quot;~/temp/&quot;);
+</code></pre><p>To use the fluent settings API, just run the <code>AzCopy(string, string, Action&lt;AzCopySettings&gt;)</code> alias:</p>
+<pre><code class="lang-csharp">AzCopy(&quot;https://myaccount.blob.core.windows.net/mycontainer/&quot;, &quot;~/temp/&quot;, settings =&gt; settings.UsePattern(&quot;*.txt&quot;));
+</code></pre><p>To use the object settings API, just run the <code>AzCopy(string, string, AzCopySettings)</code> alias:</p>
+<pre><code class="lang-csharp">var settings = new AzCopySettings { Pattern = &quot;*.txt&quot; };
+AzCopy(&quot;https://myaccount.blob.core.windows.net/mycontainer/&quot;, &quot;~/temp/&quot;, settings);
+</code></pre><p>The addin will take care of adapting the commands and options to the platform your build is running on.</p>
+<h2 id="settings">Settings</h2>
+<p>Full information on the various settings available is provided in the <a href="settings.html">Settings documentation</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/docfx/doc/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            This addin is © 2017 Alistair Chapman, and released under the terms of the MIT License
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

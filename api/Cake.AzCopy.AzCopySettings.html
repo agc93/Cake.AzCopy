@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AzCopySettings
+   | Cake.AzCopy </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AzCopySettings
+   | Cake.AzCopy ">
+    <meta name="generator" content="docfx 2.19.2.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../assets/appIcon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../doc/intro.html" title="Documentation" class="">Documentation</a>
+                  </li>
+                  <li class="active">
+                    <a href="../api/index.html" title="Reference" class="active">Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Cake.AzCopy.html" title="Cake.AzCopy" class="">Cake.AzCopy</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Cake.AzCopy.AzCopyAliases.html" title="AzCopyAliases" class="">AzCopyAliases</a>
+                          </li>
+                          <li class="">
+                            <a href="Cake.AzCopy.AzCopyRunner.html" title="AzCopyRunner" class="">AzCopyRunner</a>
+                          </li>
+                          <li class="active">
+                            <a href="Cake.AzCopy.AzCopySettings.html" title="AzCopySettings" class="active">AzCopySettings</a>
+                          </li>
+                          <li class="">
+                            <a href="Cake.AzCopy.AzCopySettingsExtensions.html" title="AzCopySettingsExtensions" class="">AzCopySettingsExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Cake.AzCopy.BlobType.html" title="BlobType" class="">BlobType</a>
+                          </li>
+                          <li class="">
+                            <a href="Cake.AzCopy.FileHandling.html" title="FileHandling" class="">FileHandling</a>
+                          </li>
+                          <li class="">
+                            <a href="Cake.AzCopy.PayloadFormat.html" title="PayloadFormat" class="">PayloadFormat</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Cake.AzCopy.AzCopySettings">
+  
+  
+  <h1 id="Cake_AzCopy_AzCopySettings" data-uid="Cake.AzCopy.AzCopySettings" class="text-break">Class AzCopySettings
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Cake.Core.Tooling.ToolSettings</span></div>
+    <div class="level2"><span class="xref">AzCopySettings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Cake.Core.Tooling.ToolSettings.ToolPath</span>
+    </div>
+    <div>
+      <span class="xref">Cake.Core.Tooling.ToolSettings.ToolTimeout</span>
+    </div>
+    <div>
+      <span class="xref">Cake.Core.Tooling.ToolSettings.WorkingDirectory</span>
+    </div>
+    <div>
+      <span class="xref">Cake.Core.Tooling.ToolSettings.ArgumentCustomization</span>
+    </div>
+    <div>
+      <span class="xref">Cake.Core.Tooling.ToolSettings.EnvironmentVariables</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Cake.AzCopy.html">Cake.AzCopy</a></h6>
+  <h6><strong>Assembly</strong>: Cake.AzCopy.dll</h6>
+  <h5 id="Cake_AzCopy_AzCopySettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AzCopySettings : ToolSettings</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_BlobType.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.BlobType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L17">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_BlobType_" data-uid="Cake.AzCopy.AzCopySettings.BlobType*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_BlobType" data-uid="Cake.AzCopy.AzCopySettings.BlobType">BlobType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobType? BlobType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Cake.AzCopy.BlobType.html">BlobType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_ConcurrentOperations.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.ConcurrentOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L24">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_ConcurrentOperations_" data-uid="Cake.AzCopy.AzCopySettings.ConcurrentOperations*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_ConcurrentOperations" data-uid="Cake.AzCopy.AzCopySettings.ConcurrentOperations">ConcurrentOperations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConcurrentOperations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_Delimiter.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.Delimiter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L23">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_Delimiter_" data-uid="Cake.AzCopy.AzCopySettings.Delimiter*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_Delimiter" data-uid="Cake.AzCopy.AzCopySettings.Delimiter">Delimiter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char ? Delimiter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_DestinationKey.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.DestinationKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L12">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_DestinationKey_" data-uid="Cake.AzCopy.AzCopySettings.DestinationKey*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_DestinationKey" data-uid="Cake.AzCopy.AzCopySettings.DestinationKey">DestinationKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DestinationKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_DestinationSAS.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.DestinationSAS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L15">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_DestinationSAS_" data-uid="Cake.AzCopy.AzCopySettings.DestinationSAS*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_DestinationSAS" data-uid="Cake.AzCopy.AzCopySettings.DestinationSAS">DestinationSAS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DestinationSAS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_FileHandlingBehaviour.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.FileHandlingBehaviour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L21">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_FileHandlingBehaviour_" data-uid="Cake.AzCopy.AzCopySettings.FileHandlingBehaviour*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_FileHandlingBehaviour" data-uid="Cake.AzCopy.AzCopySettings.FileHandlingBehaviour">FileHandlingBehaviour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileHandling? FileHandlingBehaviour { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Cake.AzCopy.FileHandling.html">FileHandling</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_LogFile.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.LogFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L37">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_LogFile_" data-uid="Cake.AzCopy.AzCopySettings.LogFile*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_LogFile" data-uid="Cake.AzCopy.AzCopySettings.LogFile">LogFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilePath LogFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cake.Core.IO.FilePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Cake_AzCopy_AzCopySettings_LogFile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is ignored when running on Linux</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_ParameterFiles.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.ParameterFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L38">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_ParameterFiles_" data-uid="Cake.AzCopy.AzCopySettings.ParameterFiles*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_ParameterFiles" data-uid="Cake.AzCopy.AzCopySettings.ParameterFiles">ParameterFiles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FilePath&gt; ParameterFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Cake.Core.IO.FilePath</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_Pattern.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.Pattern%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L11">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_Pattern_" data-uid="Cake.AzCopy.AzCopySettings.Pattern*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_Pattern" data-uid="Cake.AzCopy.AzCopySettings.Pattern">Pattern</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Pattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_PayloadFormat.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.PayloadFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L31">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_PayloadFormat_" data-uid="Cake.AzCopy.AzCopySettings.PayloadFormat*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_PayloadFormat" data-uid="Cake.AzCopy.AzCopySettings.PayloadFormat">PayloadFormat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PayloadFormat PayloadFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Cake.AzCopy.PayloadFormat.html">PayloadFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Cake_AzCopy_AzCopySettings_PayloadFormat_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is ignored when running on Linux</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_Recursive.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.Recursive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L14">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_Recursive_" data-uid="Cake.AzCopy.AzCopySettings.Recursive*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_Recursive" data-uid="Cake.AzCopy.AzCopySettings.Recursive">Recursive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Recursive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_SourceKey.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.SourceKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L13">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_SourceKey_" data-uid="Cake.AzCopy.AzCopySettings.SourceKey*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_SourceKey" data-uid="Cake.AzCopy.AzCopySettings.SourceKey">SourceKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_SourceSAS.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.SourceSAS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L16">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_SourceSAS_" data-uid="Cake.AzCopy.AzCopySettings.SourceSAS*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_SourceSAS" data-uid="Cake.AzCopy.AzCopySettings.SourceSAS">SourceSAS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceSAS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_TargetContentType.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.TargetContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L25">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_TargetContentType_" data-uid="Cake.AzCopy.AzCopySettings.TargetContentType*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_TargetContentType" data-uid="Cake.AzCopy.AzCopySettings.TargetContentType">TargetContentType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TargetContentType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_UseChecksum.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.UseChecksum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L18">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_UseChecksum_" data-uid="Cake.AzCopy.AzCopySettings.UseChecksum*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_UseChecksum" data-uid="Cake.AzCopy.AzCopySettings.UseChecksum">UseChecksum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseChecksum { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_BuildLinuxArguments_Cake_Core_IO_ProcessArgumentBuilder_.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.BuildLinuxArguments(Cake.Core.IO.ProcessArgumentBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L105">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_BuildLinuxArguments_" data-uid="Cake.AzCopy.AzCopySettings.BuildLinuxArguments*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_BuildLinuxArguments_Cake_Core_IO_ProcessArgumentBuilder_" data-uid="Cake.AzCopy.AzCopySettings.BuildLinuxArguments(Cake.Core.IO.ProcessArgumentBuilder)">BuildLinuxArguments(ProcessArgumentBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProcessArgumentBuilder BuildLinuxArguments(ProcessArgumentBuilder args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cake.Core.IO.ProcessArgumentBuilder</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cake.Core.IO.ProcessArgumentBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings_BuildWindowsArguments_Cake_Core_IO_ProcessArgumentBuilder_.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings.BuildWindowsArguments(Cake.Core.IO.ProcessArgumentBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L40">View Source</a>
+  </span>
+  <a id="Cake_AzCopy_AzCopySettings_BuildWindowsArguments_" data-uid="Cake.AzCopy.AzCopySettings.BuildWindowsArguments*"></a>
+  <h4 id="Cake_AzCopy_AzCopySettings_BuildWindowsArguments_Cake_Core_IO_ProcessArgumentBuilder_" data-uid="Cake.AzCopy.AzCopySettings.BuildWindowsArguments(Cake.Core.IO.ProcessArgumentBuilder)">BuildWindowsArguments(ProcessArgumentBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProcessArgumentBuilder BuildWindowsArguments(ProcessArgumentBuilder args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cake.Core.IO.ProcessArgumentBuilder</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cake.Core.IO.ProcessArgumentBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UsePattern_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.UsePattern(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDestinationAccountKey_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.UseDestinationAccountKey(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseSourceAccountKey_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.UseSourceAccountKey(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDestinationSignature_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.UseDestinationSignature(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseSourceSignature_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.UseSourceSignature(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_CopyRecursively_Cake_AzCopy_AzCopySettings_System_Boolean_">AzCopySettingsExtensions.CopyRecursively(AzCopySettings, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetBlobType_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.SetBlobType(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetBlobType_Cake_AzCopy_AzCopySettings_Cake_AzCopy_BlobType_">AzCopySettingsExtensions.SetBlobType(AzCopySettings, BlobType)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_EnableChecksums_Cake_AzCopy_AzCopySettings_System_Boolean_">AzCopySettingsExtensions.EnableChecksums(AzCopySettings, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_LogToFile_Cake_AzCopy_AzCopySettings_Cake_Core_IO_FilePath_">AzCopySettingsExtensions.LogToFile(AzCopySettings, FilePath)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_AddResponseFile_Cake_AzCopy_AzCopySettings_Cake_Core_IO_FilePath_">AzCopySettingsExtensions.AddResponseFile(AzCopySettings, FilePath)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetFileBehaviour_Cake_AzCopy_AzCopySettings_Cake_AzCopy_FileHandling_">AzCopySettingsExtensions.SetFileBehaviour(AzCopySettings, FileHandling)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_UseDelimiter_Cake_AzCopy_AzCopySettings_System_Char_">AzCopySettingsExtensions.UseDelimiter(AzCopySettings, Char)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetConcurrentOperationsCount_Cake_AzCopy_AzCopySettings_System_Int32_">AzCopySettingsExtensions.SetConcurrentOperationsCount(AzCopySettings, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetContentType_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.SetContentType(AzCopySettings, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetPayloadFormat_Cake_AzCopy_AzCopySettings_Cake_AzCopy_PayloadFormat_">AzCopySettingsExtensions.SetPayloadFormat(AzCopySettings, PayloadFormat)</a>
+  </div>
+  <div>
+      <a class="xref" href="Cake.AzCopy.AzCopySettingsExtensions.html#Cake_AzCopy_AzCopySettingsExtensions_SetPayloadFormat_Cake_AzCopy_AzCopySettings_System_String_">AzCopySettingsExtensions.SetPayloadFormat(AzCopySettings, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/agc93/Cake.AzCopy/new/develop/apiSpec/new?filename=Cake_AzCopy_AzCopySettings.md&amp;value=---%0Auid%3A%20Cake.AzCopy.AzCopySettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/agc93/Cake.AzCopy/blob/develop/src/Cake.AzCopy/AzCopySettings.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            This addin is © 2017 Alistair Chapman, and released under the terms of the MIT License
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
