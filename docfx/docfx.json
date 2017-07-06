@@ -72,6 +72,13 @@
       }
     ],
     "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Cake.AzCopy",
+      "_enableSearch": true,
+      "_appLogoPath": "assets/appIcon.png",
+      "_appFaviconPath": "assets/favicon.ico",
+      "_appFooter": "This addin is © 2017 Alistair Chapman, and released under the terms of the MIT License"
+    },
     "template": [
       "statictoc"
     ],
