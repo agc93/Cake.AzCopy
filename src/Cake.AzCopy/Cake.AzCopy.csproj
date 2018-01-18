@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.6;net45</TargetFramework>
+    <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.20.0"/>
+    <PackageReference Include="Cake.Core" Version="0.25.0"/>
   </ItemGroup>
 </Project>
