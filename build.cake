@@ -1,5 +1,5 @@
 #tool "nuget:?package=GitVersion.CommandLine"
-#load "helpers.cake"
+#load "build/helpers.cake"
 #tool nuget:?package=docfx.console
 #addin nuget:?package=Cake.DocFx
 
@@ -9,7 +9,15 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
-var buildFrameworks = Argument("frameworks", "netstandard1.6;net45");
+var buildFrameworks = Argument("frameworks", "netstandard1.6;net46");
+
+///////////////////////////////////////////////////////////////////////////////
+// VERSIONING
+///////////////////////////////////////////////////////////////////////////////
+
+#load "build/version.cake"
+var packageVersion = string.Empty;
+var fallbackVersion = Argument<string>("force-version", EnvironmentVariable("FALLBACK_VERSION") ?? "0.1.0");
 
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
@@ -19,7 +27,6 @@ var solutionPath = File("./src/Cake.AzCopy.sln");
 var projects = GetProjects(solutionPath, configuration);
 var artifacts = "./dist/";
 var testResultsPath = MakeAbsolute(Directory(artifacts + "./test-results"));
-GitVersion versionInfo = null;
 var frameworks = buildFrameworks.Split(new[] { ";", ","}, StringSplitOptions.RemoveEmptyEntries);
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -30,8 +37,12 @@ Setup(ctx =>
 {
 	// Executed BEFORE the first task.
 	Information("Running tasks...");
-	versionInfo = GitVersion();
-	Information("Building for version {0}", versionInfo.FullSemVer);
+	CreateDirectory(artifacts);
+	packageVersion = BuildVersion(fallbackVersion);
+	if (FileExists("./build/.dotnet/dotnet.exe")) {
+		Information("Using local install of `dotnet` SDK!");
+		Context.Tools.RegisterFile("./build/.dotnet/dotnet.exe");
+	}
 	Verbose("Building for " + string.Join(", ", frameworks));
 });
 
@@ -62,12 +73,9 @@ Task("Clean")
 Task("Restore")
 	.Does(() =>
 {
-	// Restore all NuGet packages.
+		// Restore all NuGet packages.
 	Information("Restoring solution...");
-	//NuGetRestore(solutionPath);
-	foreach (var project in projects.AllProjectPaths) {
-		DotNetCoreRestore(project.FullPath);
-	}
+	DotNetCoreRestore(projects.SolutionPath);
 });
 
 Task("Build")
@@ -76,12 +84,15 @@ Task("Build")
 	.Does(() =>
 {
 	Information("Building solution...");
-	foreach(var framework in frameworks) {
-		foreach (var project in projects.SourceProjectPaths) {
+	Information("Building solution...");
+	foreach (var project in projects.SourceProjectPaths) {
+		Information($"Building {project.GetDirectoryName()} for {configuration}");
+		foreach (var framework in frameworks)
+		{
 			var settings = new DotNetCoreBuildSettings {
-				Framework = framework,
-				Configuration = configuration,
-				NoIncremental = true,
+			Configuration = configuration,
+			Framework = framework,
+			ArgumentCustomization = args => args.Append("/p:NoWarn=NU1701"),
 			};
 			DotNetCoreBuild(project.FullPath, settings);
 		}
@@ -106,11 +117,23 @@ Task("Run-Unit-Tests")
 	}
 });
 
-Task("Generate-Docs").Does(() => {
+Task("Generate-Docs")
+	.WithCriteria(() => FileExists("./docfx/docfx.json"))
+	.Does(() => 
+{
+	Information("Building metadata...");
 	DocFxMetadata("./docfx/docfx.json");
+	Information("Building docs...");
 	DocFxBuild("./docfx/docfx.json");
+	Information("Packaging built docs...");
 	Zip("./docfx/_site/", artifacts + "/docfx.zip");
+})
+.OnError(ex => 
+{
+	Warning(ex.Message);
+	Warning("Error generating documentation!");
 });
+
 
 Task("Post-Build")
 	.IsDependentOn("Build")
@@ -119,47 +142,18 @@ Task("Post-Build")
 	.Does(() =>
 {
 	CreateDirectory(artifacts + "build");
-	CreateDirectory(artifacts + "modules");
 	foreach (var project in projects.SourceProjects) {
 		CreateDirectory(artifacts + "build/" + project.Name);
 		foreach (var framework in frameworks) {
-			var frameworkDir = artifacts + "build/" + project.Name + "/" + framework;
+			var frameworkDir = $"{artifacts}build/{project.Name}/{framework}";
 			CreateDirectory(frameworkDir);
-			var files = GetFiles(project.Path.GetDirectory() + "/bin/" + configuration + "/" + framework + "/" + project.Name +".*");
+			var files = GetFiles($"{project.Path.GetDirectory()}/bin/{configuration}/{framework}/*.*");
 			CopyFiles(files, frameworkDir);
 		}
 	}
 });
 
-Task("NuGet")
-	.IsDependentOn("Post-Build")
-	.Does(() => 
-{
-	CreateDirectory(artifacts + "package");
-	Information("Building NuGet package");
-	var versionNotes = ParseAllReleaseNotes("./ReleaseNotes.md").FirstOrDefault(v => v.Version.ToString() == versionInfo.MajorMinorPatch);
-	var content = GetContent(frameworks, projects, configuration);
-	var settings = new NuGetPackSettings {
-		Id				= "Cake.AzCopy",
-		Version			= versionInfo.NuGetVersionV2,
-		Title			= "Cake.AzCopy",
-		Authors		 	= new[] { "Alistair Chapman" },
-		Owners			= new[] { "achapman", "cake-contrib" },
-		Description		= "A simple Cake addin powered by AzCopy for uploading and downloading to/from Azure Storage (including Blob, Table and Files)",
-		ReleaseNotes	= versionNotes != null ? versionNotes.Notes.ToList() : new List<string>(),
-		Summary			= "A simple Cake addin for AzCopy.",
-		ProjectUrl		= new Uri("https://github.com/agc93/Cake.AzCopy"),
-		IconUrl			= new Uri("https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png"),
-		LicenseUrl		= new Uri("https://raw.githubusercontent.com/agc93/Cake.AzCopy/master/LICENSE"),
-		Copyright		= "Alistair Chapman 2017",
-		Tags			= new[] { "cake", "build", "script", "azure", "azcopy" },
-		OutputDirectory = artifacts + "/package",
-		Files			= content,
-		//KeepTemporaryNuSpecFile = true
-	};
-
-	NuGetPack(settings);
-});
+#load "build/nuget.cake"
 
 Task("Default")
 	.IsDependentOn("NuGet");
