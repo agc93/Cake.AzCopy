@@ -9,7 +9,7 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
-var buildFrameworks = Argument("frameworks", "netstandard1.6;net46");
+var buildFrameworks = Argument("frameworks", "netstandard2.0");
 
 ///////////////////////////////////////////////////////////////////////////////
 // VERSIONING
