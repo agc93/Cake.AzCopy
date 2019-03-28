@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cake.Core;
@@ -93,8 +94,16 @@ namespace Cake.AzCopy
             if (ConcurrentOperations != 0) {
                 args.AppendSwitchQuoted("/NC", ":", ConcurrentOperations.ToString());
             }
-            if (TargetContentType.IsDefined()) {
-                args.AppendSwitchQuoted("/SetContentType", ":", TargetContentType);
+            if (TargetContentType != null) {
+                // Could be present but empty
+                if (TargetContentType.Equals(String.Empty)) {
+                    // If you specify this option without a value, then AzCopy sets each blob or file's content type according to its file extension.
+                    // https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy#setcontenttypecontent-type
+                    args.AppendSwitchQuoted("/SetContentType", String.Empty);
+                }
+                else {
+                    args.AppendSwitchQuoted("/SetContentType", ":", TargetContentType);
+                }
             }
             if (PayloadFormat != PayloadFormat.Default) {
                 args.AppendSwitchQuoted("/PayloadFormat", ":", PayloadFormat.ToString());
@@ -151,9 +160,19 @@ namespace Cake.AzCopy
             if (ConcurrentOperations != 0) {
                 args.AppendSwitchQuoted("--parallel-level", ConcurrentOperations.ToString());
             }
-            if (TargetContentType.IsDefined()) {
-                args.AppendSwitchQuoted("--set-content-type", TargetContentType);
+
+            if (TargetContentType != null) {
+                // Could be present but empty
+                if (TargetContentType.Equals(String.Empty)) {
+                    // If you specify this option without a value, then AzCopy sets each blob or file's content type according to its file extension.
+                    // https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy#setcontenttypecontent-type
+                    args.AppendSwitchQuoted("--set-content-type", String.Empty);
+                }
+                else {
+                    args.AppendSwitchQuoted("--set-content-type", TargetContentType);
+                }
             }
+
             return args;
         }
     }
